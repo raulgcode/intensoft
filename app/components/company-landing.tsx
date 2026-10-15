@@ -518,7 +518,15 @@ export function CompanyLanding({ locale }: CompanyLandingProps) {
               <p>{t("cta.hint.whatsapp")}</p>
             </div>
           </div>
-          <p className="mt-8 text-sm text-white/82">{t("footer")}</p>
+          <footer className="mt-8 space-y-1 text-sm text-white/82">
+            <p>{t("footer")}</p>
+            <p className="text-white/70">
+              {t("footer.legal").replace(
+                "{year}",
+                String(new Date().getFullYear()),
+              )}
+            </p>
+          </footer>
         </section>
       </main>
     </div>
