@@ -31,6 +31,8 @@ const en = {
   "cta.hint.calendly": "Calendly: calendly.com/intensoft",
   "cta.hint.whatsapp": "WhatsApp: +506 8438 4179",
   footer: "Intensoft. Engineering software and AI systems with precision.",
+  "footer.legal":
+    "© {year} Monaz Studio LLC. All rights reserved. Intensoft (intensoft.dev) is operated by Monaz Studio LLC.",
 } as const;
 
 const es = {
@@ -60,6 +62,8 @@ const es = {
   "cta.hint.calendly": "Calendly: calendly.com/intensoft",
   "cta.hint.whatsapp": "WhatsApp: +506 8438 4179",
   footer: "Intensoft. Ingenieria de software y sistemas de IA con precision.",
+  "footer.legal":
+    "© {year} Monaz Studio LLC. Todos los derechos reservados. Intensoft (intensoft.dev) es operado por Monaz Studio LLC.",
 } as const;
 
 export type TranslationKey = keyof typeof en;

@@ -18,6 +18,7 @@ export function buildStructuredData(
   const organization: JsonLdNode = {
     "@type": "Organization",
     name: organizationName,
+    legalName: "Monaz Studio LLC",
     url: baseUrl,
     contactPoint: [
       {
