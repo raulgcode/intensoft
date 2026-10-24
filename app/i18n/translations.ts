@@ -28,11 +28,15 @@ const en = {
     "Let's define a roadmap that turns your ideas into reliable, high-impact digital products.",
   "cta.button": "Start the Conversation",
   "cta.whatsapp": "Chat on WhatsApp",
+  "cta.email": "Send an Email",
   "cta.hint.calendly": "Calendly: calendly.com/intensoft",
   "cta.hint.whatsapp": "WhatsApp: +506 8438 4179",
+  "cta.hint.email": "Email: rgonzalez@intensoft.dev",
   footer: "Intensoft. Engineering software and AI systems with precision.",
   "footer.legal":
-    "© {year} Monaz Studio LLC. All rights reserved. Intensoft (intensoft.dev) is operated by Monaz Studio LLC.",
+    "© {year} Monaz Studio LLC, a Wyoming limited liability company. All rights reserved. Intensoft (intensoft.dev) is operated by Monaz Studio LLC.",
+  "footer.privacy": "Privacy Policy",
+  "privacy.back": "Back to home",
 } as const;
 
 const es = {
@@ -59,11 +63,15 @@ const es = {
     "Disenemos una hoja de ruta para convertir tus ideas en productos digitales confiables y de alto impacto.",
   "cta.button": "Iniciar Conversacion",
   "cta.whatsapp": "Escribir por WhatsApp",
+  "cta.email": "Enviar un Correo",
   "cta.hint.calendly": "Calendly: calendly.com/intensoft",
   "cta.hint.whatsapp": "WhatsApp: +506 8438 4179",
+  "cta.hint.email": "Correo: rgonzalez@intensoft.dev",
   footer: "Intensoft. Ingenieria de software y sistemas de IA con precision.",
   "footer.legal":
-    "© {year} Monaz Studio LLC. Todos los derechos reservados. Intensoft (intensoft.dev) es operado por Monaz Studio LLC.",
+    "© {year} Monaz Studio LLC, una sociedad de responsabilidad limitada de Wyoming. Todos los derechos reservados. Intensoft (intensoft.dev) es operado por Monaz Studio LLC.",
+  "footer.privacy": "Política de Privacidad",
+  "privacy.back": "Volver al inicio",
 } as const;
 
 export type TranslationKey = keyof typeof en;
