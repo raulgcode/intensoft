@@ -43,6 +43,11 @@ const languageRoute: Record<Locale, string> = {
 };
 
 const calendlyUrl = "https://calendly.com/intensoft";
+const contactEmail = "rgonzalez@intensoft.dev";
+const privacyRoute: Record<Locale, string> = {
+  en: "/privacy",
+  es: "/es/privacy",
+};
 const whatsappMessageByLocale: Record<Locale, string> = {
   en: "Hi Intensoft, I want to talk about software and AI agent development.",
   es: "Hola Intensoft, quiero conversar sobre desarrollo de software y agentes de IA.",
@@ -512,10 +517,27 @@ export function CompanyLanding({ locale }: CompanyLandingProps) {
               >
                 {t("cta.whatsapp")}
               </a>
+              <a
+                href={`mailto:${contactEmail}`}
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "h-11 border-white/45 bg-white/10 px-5 text-white hover:bg-white/20",
+                )}
+              >
+                {t("cta.email")}
+              </a>
             </div>
             <div className="mt-4 space-y-1 text-sm text-white/80">
               <p>{t("cta.hint.calendly")}</p>
               <p>{t("cta.hint.whatsapp")}</p>
+              <p>
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="underline-offset-4 hover:text-white hover:underline"
+                >
+                  {t("cta.hint.email")}
+                </a>
+              </p>
             </div>
           </div>
           <footer className="mt-8 space-y-1 text-sm text-white/82">
@@ -525,6 +547,14 @@ export function CompanyLanding({ locale }: CompanyLandingProps) {
                 "{year}",
                 String(new Date().getFullYear()),
               )}
+            </p>
+            <p>
+              <Link
+                to={privacyRoute[locale]}
+                className="text-white/82 underline underline-offset-4 hover:text-white"
+              >
+                {t("footer.privacy")}
+              </Link>
             </p>
           </footer>
         </section>

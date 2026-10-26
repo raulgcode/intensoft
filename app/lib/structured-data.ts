@@ -19,11 +19,18 @@ export function buildStructuredData(
     "@type": "Organization",
     name: organizationName,
     legalName: "Monaz Studio LLC",
+    email: "rgonzalez@intensoft.dev",
+    address: {
+      "@type": "PostalAddress",
+      addressRegion: "WY",
+      addressCountry: "US",
+    },
     url: baseUrl,
     contactPoint: [
       {
         "@type": "ContactPoint",
         contactType: "sales",
+        email: "rgonzalez@intensoft.dev",
         telephone: "+50684384179",
         areaServed: "Worldwide",
         availableLanguage: ["English", "Spanish"],
